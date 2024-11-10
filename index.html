@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Listas Desplegables Anidadas</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <h1>Formulario con Listas Desplegables Anidadas</h1>
+    <form action="" method="post">
+        
+        <label for="pais">País:</label>
+        <select name="pais" id="Pais" required>
+            <option value="">Seleccione un país</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Inglaterra">Inglaterra</option>
+            <option value="Japon">Japón</option>
+            <option value="México">México</option>
+            <option value="Francia">Francia</option>
+            <option value="Otro">Otro</option>
+        </select>
+        
+        <br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <select name="ciudad" id="Ciudad" required>
+            <option value="">Seleccione primero un país</option>
+        </select>
+        
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

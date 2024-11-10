@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Fondo suave con un toque fresco */
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.Indice {
+list-style: none;
+padding: 0;
+background: blue;
+width: 90%;
+max-width: 1000px;
+margin: auto;
+}
+
+.Indice li a
+{
+text-decoration: none;
+color: rgb(255, 255, 255);
+padding: 10px;
+display: block;
+}
+
+.Indice li
+{
+display: inline-block;
+text-align: center;
+}
+
+.Indice li a:hover
+{
+background: black;
+color: white;
+}
+
+
+h1 {
+    text-align: center;
+    color: #ff4040; /* Color llamativo para el título */
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #c71111, #ff0d0d); /* Fondo degradado con colores vibrantes */
+    border-radius: 12px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-10px); /* Efecto de movimiento al hacer hover */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Estilo de los inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="url"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4040; /* Borde rosado llamativo */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="month"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff8080; /* Borde más claro al enfocar */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Efecto de brillo al enfocar */
+}
+
+/* Estilo de los inputs de tipo checkbox y radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 12px;
+    accent-color: #fd2e2e; /* Color personalizado para los checkboxes */
+}
+
+/* Estilo del textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Botón de submit */
+input[type="submit"] {
+    background-color: #f52f2f; /* Color llamativo de fondo */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: #f12828; /* Cambia el color al hacer hover */
+    transform: scale(1.05); /* Efecto de aumentar el tamaño al pasar el ratón */
+}
+
+input[type="submit"]:active {
+    background-color: #c10000; /* Vuelve al color original al presionar */
+    transform: scale(1); /* Restaurar tamaño */
+}
+
+/* Estilo del salto de línea */
+br {
+    display: none;
+}

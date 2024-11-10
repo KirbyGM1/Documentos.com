@@ -1,0 +1,50 @@
+body {
+    background-color:red;
+}
+
+.Indice {
+list-style: none;
+padding: 0;
+background: blue;
+width: 90%;
+max-width: 1000px;
+margin: auto;
+}
+
+.Indice li a
+{
+text-decoration: none;
+color: rgb(255, 255, 255);
+padding: 10px;
+display: block;
+}
+
+.Indice li
+{
+display: inline-block;
+text-align: center;
+}
+
+.Indice li a:hover
+{
+background: black;
+color: white;
+}
+
+
+.Eta {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de Formulario</title>
+</head>
+<body>
+
+    <nav class="Indice">
+        <font-awesome-icon icon="fa-solid fa-house-user" />
+        <li  class="inicio fa-solid fa-huose"><a href="Perfil.html">Perfil</a></li>
+        <li  class="fa-solid fa-people-group"><a href="Datos.html">Datos</a></li>
+        <li  class="fa-solid fa-people-group"><a href="Conocimiento.html">Conocimiento</a></li>
+        <li  class="fa-solid fa-people-group"><a href="Etapas.html">Etapas</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="index.html">Combo Anidadas</a></li>
+    </nav>
+
+    <h1>Formulario con todos los controles HTML</h1>
+    <form action="" method="">
+
+        <!-- Campo de texto simple -->
+        <label for="Nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+        <br><br>
+
+        <!-- Campo de texto Contraseña -->
+        <label for="Password">Contraseña:</label> 
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        
+        <!-- Campo de Correo electronico -->
+        <label for="email">Correo:</label> 
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        <br><br>
+        
+        <!-- Campo de Numerico -->
+        <label for="edad">Edad</label> 
+        <input type="number" id="edad" name="edad" min="18" max="120">
+        <br><br>
+        
+        <!-- Campo de Rango -->
+        <label for="sastisfaccion">Nivel de Sastisfaccion (1-10)</label> 
+        <input type="range" id="sastisfaccion" name="sastisfaccion" min="0" max="10">
+        <br><br>
+
+        <!-- campo de Fecha -->
+        <label for="Fecha">Fecha de Nacimiento:</label> 
+        <input type="date" id="fecha" name="fecha" required>
+        <br><br>
+        
+        <!-- campo de Hora -->
+        <label for="Hora">Hora de Contacto:</label> 
+        <input type="time" id="hora" name="hora">
+        <br><br>
+        
+        <!-- campo de Mes -->
+        <label for="Mes">Mes y año preferido</label> 
+        <input type="month" id="mes" name="mes" >
+        
+        <br><br>
+        <!-- campo de Url -->
+        <label for="Sitio">Sitio web Personal</label> 
+        <input type="url" id="sitio" name="sitio" placeholder="http://ejemplo.com">
+        <br><br>
+        
+        <!-- campo de Telefono -->
+        <label for="Telefono">Teléfono:</label> 
+        <input type="tel" id="telefono" name="telefono" placeholder="+52 123 456 7890">
+        <br><br>
+
+        <!-- lista de Desplegable -->
+        <label for="Pais">País:</label> 
+        <select id="pais" name="pais">
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="colombia">Colombia</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="chile">Chile</option>
+            <option value="peru">Perú</option>
+            <option value="paraguay">Paraguay</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="england">Inglaterra</option>
+            <option value="france">Francia</option>
+            <option value="deutschland">Alemania</option>
+        </select>
+        <br><br>
+        
+        <!-- Casillas de Verificación (checkbox) -->
+        <label> Idiomas que hablas:</label><br>
+        <input type="checkbox" id="espanol mexicano" name="idioma" value="espanol mexicano">
+        <label for="espanol mexicano">Español Méxicano</label><br>
+        <input type="checkbox" id="espanol tepiteno" name="idioma" value="espanol tepiteno">
+        <label for="espanol tepino">Español Tepiteño</label><br>
+        <input type="checkbox" id="espanol norteno" name="idioma" value="espanol norteno">
+        <label for="espanol norteno">Español Norteño</label><br>
+        <input type="checkbox" id="espanol espana" name="idioma" value="espanol espana">
+        <label for="espanol espana">Español España</label><br>
+        <input type="checkbox" id="espanol argentino" name="idioma" value="espanol argentino">
+        <label for="espanol argentino">Español Argentino</label><br>
+        <input type="checkbox" id="portugues brasileno" name="idioma" value="portugues brasileno">
+        <label for="portugues brasileno">Portugues Brasileño</label><br>
+        <input type="checkbox" id="espanol ecuatoriano" name="idioma" value="espanol ecuatoriano">
+        <label for="espanol ecuatoriano">Español Ecuatoriano</label><br>
+        <input type="checkbox" id="espanol uruguayo" name="idioma" value="espanol uruguayo">
+        <label for="espanol uruguayo">Español Uruguayo</label><br>
+        <input type="checkbox" id="espanol venezolano" name="idioma" value="espanol venezolano">
+        <label for="espanol venezolano">Español Venezolano</label><br>
+        <input type="checkbox" id="espanol chileno" name="idioma" value="espanol chileno">
+        <label for="espanol chileno">Español Chileno</label><br>
+        <input type="checkbox" id="espanol peruano" name="idioma" value="espanol peruano">
+        <label for="espanol peruano">Español Peruano</label><br>
+        <input type="checkbox" id="espanol paraguayo" name="idioma" value="espanol paraguayo">
+        <label for="espanol paraguayo">Español Paraguayo</label><br>
+        <input type="checkbox" id="espanol boliviano" name="idioma" value="espanol boliviano">
+        <label for="espanol boliviano">Español Boliviano</label><br>
+        <input type="checkbox" id="ingles britanico" name="idioma" value="ingles britanico">
+        <label for="ingles britanico">Ingles Britanico</label><br>
+        <input type="checkbox" id="francais" name="idioma" value="francais">
+        <label for="francais">Frances</label><br>
+        <input type="checkbox" id="deutsch" name="idioma" value="deutsch">
+        <label for="deutsch">Alemán</label><br><br>
+
+        <!-- Botones de opción (radio) -->
+        <label> Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br><br>
+
+        <!-- Area de Texto -->
+        <label for="comentarios">Comentarios Adicionales</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escrribe tus comentarios aquí..."></textarea>
+        <br><br>
+
+        <!-- Archivo -->
+        <label for="archivo">subir un Archivo</label>
+        <input type="file" id="archivo" name="archivo">
+        <br><br>
+
+        <!-- Botón de Envío -->
+        <input type="submit" value="Enviar">
+        <link rel="stylesheet" href="style5.css">
+
+    </form>    
+</body>
+</html>

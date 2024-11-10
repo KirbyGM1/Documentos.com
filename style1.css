@@ -1,0 +1,80 @@
+body {
+    background-color: white;
+}
+
+.Indice {
+    list-style-type: style;
+    padding: 0;
+    background-color: blue;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.Indice li a {
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    padding: 10px;
+    display: block;
+}
+
+.Indice li {
+    display: inline-block;
+    text-align: center;
+}
+
+.Indice li a:hover {
+    background: black;
+    color: white;
+}
+
+.img-perfil {
+    display: block;
+    margin: 30px auto;
+    width: 80px;
+    height: auto;
+    border: 5px solid red;
+}
+
+.img-face {
+    display: block;
+    margin: 30px auto;
+    width: 80px;
+    height: auto;
+    border: 5px solid blue;  
+}
+
+.img-ins {
+    display: block;
+    margin: 30px auto;
+    width: 80px;
+    height: auto;
+    border: 5px solid mediumpurple;
+}
+
+.img-you {
+    display: block;
+    margin: 30px auto;
+    width: 80px;
+    height: auto;
+    border: 5px solid red;   
+}
+
+.info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,164 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    animation: backgroundAnimation 5s ease-in-out infinite;
+}
+
+/* Animación del fondo */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #f0f4f7;
+    }
+    50% {
+        background-color: #3bebff; /* Fondo amarillo brillante */
+    }
+    100% {
+        background-color: #f0f4f7;
+    }
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    transform: translateY(-50px);
+    animation: slideIn 1s ease-out forwards; /* Animación de deslizamiento */
+}
+
+/* Animación de deslizamiento del formulario */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #ff6347; /* Color vibrante para el título */
+    margin-bottom: 25px;
+    font-weight: bold;
+    animation: titleAnimation 1.5s ease-out forwards; /* Animación para el título */
+}
+
+/* Animación del título */
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4caf50; /* Color vibrante para las etiquetas */
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* Animación de aparición */
+}
+
+/* Animación de aparición de las etiquetas */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo para los select (listas desplegables) */
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff6347; /* Borde llamativo */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #7cff3b; /* Fondo amarillo brillante */
+    color: #333;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards 0.5s; /* Animación de aparición deslizante */
+}
+
+/* Animación de deslizamiento hacia arriba */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo cuando el select está enfocado */
+select:focus {
+    border-color: #ff5722; /* Rojo vibrante al enfocar */
+    background-color: #fff3e0;
+    outline: none;
+}
+
+/* Estilo de los botones de envío */
+input[type="submit"] {
+    background-color: #ff6347; /* Rojo brillante */
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards 1.5s; /* Animación de aparición para el botón */
+}
+
+/* Estilo cuando el botón de envío está en hover */
+input[type="submit"]:hover {
+    background-color: #d32f2f; /* Rojo más oscuro al hacer hover */
+}
+
+/* Espaciado entre los elementos del formulario */
+br {
+    margin-bottom: 15px;
+}
+
+/* Mensajes de advertencia o instrucciones */
+option {
+    font-size: 16px;
+}
+
+/* Estilo del contenedor de opciones de selección */
+select, option {
+    font-family: 'Arial', sans-serif;
+}
+
